@@ -14,5 +14,154 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  background-color: #2C2C2C;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding-bottom: 25px;
+}
+
+.navbar {
+  height: 50px;
+}
+.border-bottom {
+  border-bottom: 1px solid #2C2C2C !important;
+}
+
+.navbar-brand {
+  font-size: 280%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+;}
+
+.navbar-collapse{
+  background-color: #3E4E50;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.navbar-light .navbar-brand {
+  color: #ffd700;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #ffd700 !important;
+  text-shadow:  0 0 15px #fff
+}
+
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgb(240 231 17) !important;
+}
+
+
+.bg-white {
+  --bs-bg-opacity: 1;
+  background-color: #3E4E50 !important;
+}
+
+
+.container {
+  background-color: #3E4E50;
+  border-radius: 15px;
+  padding: 20px 20px 0 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 15px;
+}
+
+footer {
+  background-color: #3E4E50;
+  color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  padding: 5px 0 1px 0;
+  text-align: center;
+  border-top: 2px solid #556B2F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer[b-he1jpyb09p] {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  border-style: solid;
+  border-radius: 15px;
+  padding-top: 15px;
+  border-color: grey;
+  background-color: #ffd700;
+  transition: box-shadow 0.3s ease;
+}
+
+.mt-4:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #ffffff !important;
+}
+
+.card {
+  background-image: url('Borat.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20%;
+  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+}
+
+.card-title {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-title:hover {
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+}
+
+.card-text {
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-text:hover {
+  transform: scale(1.08);
+  color: rgb(255, 255, 255);
+}
+
+.card-link {
+  font-style: italic;
+  color: rgb(0, 0, 0);
 }
