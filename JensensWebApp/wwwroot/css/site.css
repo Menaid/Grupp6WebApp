@@ -165,3 +165,13 @@ footer a:hover {
   font-style: italic;
   color: rgb(0, 0, 0);
 }
+
+
+#following-image{
+  position: fixed;
+  top: 20px;
+  right: -20px;
+  width: 150px;
+  height: auto;
+}
+
