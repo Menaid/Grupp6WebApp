@@ -16,7 +16,8 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">𝒢𝓇𝓊𝓅𝓅 𝒱𝐼</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarSupportedContent" aria-expanded="false" onclick="changeToBorat"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -29,6 +30,9 @@
                                 asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                </div>
+                <div class="rocket" onclick="startImageChange()">
+                    <img src="~/Rocket/rocket1.png" alt="Following Image" id="following-image" />
                 </div>
             </div>
         </nav>
@@ -47,7 +51,62 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/imageChanger.js" asp-append-version="true"></script>
+    <script src="~/js/rocketScroll.js" asp-append-version="true"></script>
+    <script src="~/js/borat.js" asp-append-version="true"></script>
+
+
+    <script>
+        let images = [
+            '@Url.Content("~/Rocket/Rocket1.png")',
+            '@Url.Content("~/Rocket/Rocket2.png")',
+            '@Url.Content("~/Rocket/Rocket3.png")',
+            '@Url.Content("~/Rocket/Rocket4.png")',
+            '@Url.Content("~/Rocket/Rocket5.png")',
+            '@Url.Content("~/Rocket/Rocket6.png")',
+            '@Url.Content("~/Rocket/Rocket7.png")',
+            '@Url.Content("~/Rocket/Rocket8.png")',
+            '@Url.Content("~/Rocket/Rocket9.png")',
+            '@Url.Content("~/Rocket/Rocket10.png")',
+            '@Url.Content("~/Rocket/Rocket11.png")',
+            '@Url.Content("~/Rocket/Rocket12.png")',
+            '@Url.Content("~/Rocket/Rocket13.png")',
+            '@Url.Content("~/Rocket/Rocket14.png")',
+            '@Url.Content("~/Rocket/Rocket15.png")',
+            '@Url.Content("~/Rocket/Rocket16.png")',
+            '@Url.Content("~/Rocket/Rocket17.png")',
+            '@Url.Content("~/Rocket/Rocket18.png")',
+            '@Url.Content("~/Rocket/Rocket19.png")',
+            '@Url.Content("~/Rocket/Rocket20.png")',
+            '@Url.Content("~/Rocket/Rocket21.png")'
+        ];
+
+        function startImageChange() {
+            // Scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            let counter = 0;
+            let interval = setInterval(() => {
+                if (counter >= images.length) {
+                    clearInterval(interval);
+                } else {
+                    document.getElementById('following-image').src = images[counter];
+                    counter++;
+                }
+            }, 50); // Adjusted interval to 100ms for a more visible change
+        }
+
+    </script>
+    <script>
+        // Call the function when the page is loaded
+        window.onload = function () {
+            changeCardBodyToBorat();
+        };
+    </script>
+
 </body>
+
+</html>
+
 
 </html>
