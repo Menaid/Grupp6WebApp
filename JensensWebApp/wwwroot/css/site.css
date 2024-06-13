@@ -215,3 +215,10 @@ h1 {
 .btn.btn-primary:hover {
   transform: scale(1.15);
 }
+
+#following-image {
+  position: fixed;
+  height: 150px;
+  width: auto;
+  right: -30px;
+}
