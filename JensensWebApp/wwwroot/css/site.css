@@ -89,6 +89,7 @@ footer {
   flex-direction: column;
 }
 
+
 .footer-container {
   color: #ffffff;
 }
@@ -221,4 +222,12 @@ h1 {
   height: 150px;
   width: auto;
   right: -30px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 30%;
 }
