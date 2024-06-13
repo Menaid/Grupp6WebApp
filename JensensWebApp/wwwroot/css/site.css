@@ -82,14 +82,15 @@ body {
 footer {
   background-color: #3E4E50;
   color: #ffffff;
-  border-radius: 0 0 15px 15px;
-  padding: 5px 0 1px 0;
   text-align: center;
-  border-top: 2px solid #556B2F;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.footer-container {
+  color: #ffffff;
 }
 
 footer a {
@@ -100,12 +101,16 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 .footer[b-he1jpyb09p] {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   white-space: nowrap;
+  height: 57px;
+  border-top: 2px solid #ffffff !important;
 }
+
+
 
 .mt-4 {
   margin-top: 1.5rem !important;
@@ -209,4 +214,11 @@ h1 {
 
 .btn.btn-primary:hover {
   transform: scale(1.15);
+}
+
+#following-image {
+  position: fixed;
+  height: 150px;
+  width: auto;
+  right: -30px;
 }

@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,15 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/JensensWebApp.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">𝒢𝓇𝓊𝓅𝓅 𝒱𝐼</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" onclick="changeToBorat" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" onclick="changeToBorat"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -23,7 +26,8 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -38,6 +42,12 @@
             @RenderBody()
         </main>
     </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="footer-container">
+            &copy; 2023 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -46,53 +56,57 @@
     <script src="~/js/borat.js" asp-append-version="true"></script>
 
 
-        <script>
-            let images = [
-    '@Url.Content("~/Rocket/Rocket1.png")',
-    '@Url.Content("~/Rocket/Rocket2.png")',
-    '@Url.Content("~/Rocket/Rocket3.png")',
-    '@Url.Content("~/Rocket/Rocket4.png")',
-    '@Url.Content("~/Rocket/Rocket5.png")',
-    '@Url.Content("~/Rocket/Rocket6.png")',
-    '@Url.Content("~/Rocket/Rocket7.png")',
-    '@Url.Content("~/Rocket/Rocket8.png")',
-    '@Url.Content("~/Rocket/Rocket9.png")',
-    '@Url.Content("~/Rocket/Rocket10.png")',
-    '@Url.Content("~/Rocket/Rocket11.png")',
-    '@Url.Content("~/Rocket/Rocket12.png")',
-    '@Url.Content("~/Rocket/Rocket13.png")',
-    '@Url.Content("~/Rocket/Rocket14.png")',
-    '@Url.Content("~/Rocket/Rocket15.png")',
-    '@Url.Content("~/Rocket/Rocket16.png")',
-    '@Url.Content("~/Rocket/Rocket17.png")',
-    '@Url.Content("~/Rocket/Rocket18.png")',
-    '@Url.Content("~/Rocket/Rocket19.png")',
-    '@Url.Content("~/Rocket/Rocket20.png")',
-    '@Url.Content("~/Rocket/Rocket21.png")'
-];
+    <script>
+        let images = [
+            '@Url.Content("~/Rocket/Rocket1.png")',
+            '@Url.Content("~/Rocket/Rocket2.png")',
+            '@Url.Content("~/Rocket/Rocket3.png")',
+            '@Url.Content("~/Rocket/Rocket4.png")',
+            '@Url.Content("~/Rocket/Rocket5.png")',
+            '@Url.Content("~/Rocket/Rocket6.png")',
+            '@Url.Content("~/Rocket/Rocket7.png")',
+            '@Url.Content("~/Rocket/Rocket8.png")',
+            '@Url.Content("~/Rocket/Rocket9.png")',
+            '@Url.Content("~/Rocket/Rocket10.png")',
+            '@Url.Content("~/Rocket/Rocket11.png")',
+            '@Url.Content("~/Rocket/Rocket12.png")',
+            '@Url.Content("~/Rocket/Rocket13.png")',
+            '@Url.Content("~/Rocket/Rocket14.png")',
+            '@Url.Content("~/Rocket/Rocket15.png")',
+            '@Url.Content("~/Rocket/Rocket16.png")',
+            '@Url.Content("~/Rocket/Rocket17.png")',
+            '@Url.Content("~/Rocket/Rocket18.png")',
+            '@Url.Content("~/Rocket/Rocket19.png")',
+            '@Url.Content("~/Rocket/Rocket20.png")',
+            '@Url.Content("~/Rocket/Rocket21.png")'
+        ];
 
-function startImageChange(){
-    // Scroll to the top of the page
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+        function startImageChange() {
+            // Scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    let counter = 0;
-    let interval = setInterval(() => {
-        if (counter >= images.length) {
-            clearInterval(interval);
-        } else {
-            document.getElementById('following-image').src = images[counter];
-            counter++;
+            let counter = 0;
+            let interval = setInterval(() => {
+                if (counter >= images.length) {
+                    clearInterval(interval);
+                } else {
+                    document.getElementById('following-image').src = images[counter];
+                    counter++;
+                }
+            }, 50); // Adjusted interval to 100ms for a more visible change
         }
-    }, 50); // Adjusted interval to 100ms for a more visible change
-}
 
-        </script>
-        <script>
-    // Call the function when the page is loaded
-    window.onload = function() {
-        changeCardBodyToBorat();
-    };
-        </script>
+    </script>
+    <script>
+        // Call the function when the page is loaded
+        window.onload = function () {
+            changeCardBodyToBorat();
+        };
+    </script>
 
 </body>
+
+</html>
+
+
 </html>
