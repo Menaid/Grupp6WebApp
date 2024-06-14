@@ -217,10 +217,9 @@ h1 {
 }
 
 .input-group {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: 30%;
-  background-image: var(--bs-bg-opacity);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 30%;
 }
