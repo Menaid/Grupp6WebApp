@@ -12,33 +12,36 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-custom border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Grupp IV</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" onclick="changeToBorat"
-                    aria-label="Toggle navigation">
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
-                                asp-action="Privacy">Privacy</a>
-                </div>
-                <div class="rocket" onclick="startImageChange()">
-                    <img src="~/Rocket/rocket1.png" alt="Following Image" id="following-image" />
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-light" id="theme-toggle" onclick="toggleTheme()">Light Theme</button>
+                    <div class="rocket" onclick="startImageChange()">
+                        <img src="~/Rocket/rocket1.png" alt="Following Image" id="following-image" />
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
-             <div class="row article-container">
-            @RenderBody()
-             </div>
+            <div class="row article-container">
+                @RenderBody()
+            </div>
         </main>
     </div>
 
@@ -47,7 +50,6 @@
             &copy; 2024 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-   
 
     <script>
         let images = [
@@ -89,6 +91,36 @@
             }, 50); // Adjusted interval to 100ms for a more visible change
         }
 
+        // Function to toggle between light and dark themes
+        function toggleTheme() {
+            const body = document.body;
+            const toggleButton = document.getElementById('theme-toggle');
+            const isLightTheme = body.classList.toggle('light-theme');
+
+            // Toggle navbar class
+            const navbar = document.querySelector('.navbar');
+            if (isLightTheme) {
+                navbar.classList.add('navbar-custom-light');
+            } else {
+                navbar.classList.remove('navbar-custom-light');
+            }
+
+            // Update button text based on the theme
+            toggleButton.textContent = isLightTheme ? 'Dark Theme' : 'Light Theme';
+
+            // Store the user's preference in localStorage
+            localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
+        }
+
+        // Apply the theme based on localStorage when the page loads
+        window.onload = function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light') {
+                document.body.classList.add('light-theme');
+                document.querySelector('.navbar').classList.add('navbar-custom-light');
+                document.getElementById('theme-toggle').textContent = 'Dark Theme';
+            }
+        };
     </script>
     <script>
         // Call the function when the page is loaded
@@ -96,13 +128,13 @@
             changeCardBodyToBorat();
         };
     </script>
-     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/imageChanger.js" asp-append-version="true"></script>
     <script src="~/js/rocketScroll.js" asp-append-version="true"></script>
     <script src="~/js/borat.js" asp-append-version="true"></script>
-     @RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 
 </body>
 </html>
