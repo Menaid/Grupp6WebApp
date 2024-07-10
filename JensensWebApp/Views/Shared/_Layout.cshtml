@@ -51,6 +51,8 @@
         </div>
     </footer>
 
+    <script src="~/js/themeToggle.js" asp-append-version="true"></script>
+
     <script>
         let images = [
             '@Url.Content("~/Rocket/Rocket1.png")',
@@ -90,40 +92,7 @@
             }, 50); 
         }
 
-        // Function to toggle between light and dark themes
-        function toggleTheme() {
-            const body = document.body;
-            const toggleButton = document.getElementById('theme-toggle');
-            const isLightTheme = body.classList.toggle('light-theme');
 
-            const navbar = document.querySelector('.navbar');
-            if (isLightTheme) {
-                navbar.classList.add('navbar-custom-light');
-            } else {
-                navbar.classList.remove('navbar-custom-light');
-            }
-
-            // Update button text based on the theme
-            toggleButton.textContent = isLightTheme ? 'Dark Theme' : 'Light Theme';
-
-            // Store the user's preference in localStorage
-            localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
-        }
-
-        // Apply the theme based on localStorage when the page loads
-        window.onload = function () {
-            const theme = localStorage.getItem('theme');
-            if (theme === 'light') {
-                document.body.classList.add('light-theme');
-                document.querySelector('.navbar').classList.add('navbar-custom-light');
-                document.getElementById('theme-toggle').textContent = 'Dark Theme';
-            }
-        };
-    </script>
-    <script>
-        window.onload = function () {
-            changeCardBodyToBorat();
-        };
     </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
