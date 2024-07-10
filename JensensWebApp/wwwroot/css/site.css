@@ -15,10 +15,10 @@ html {
 
 
 body {
-  background-image: url('../images/Space.png'); /* Check the relative path */
+  background-image: url('../images/Space.png'); 
   background-size: cover;
-  background-attachment: fixed; /* Keep the background image fixed to create a parallax effect */
-  background-position: center top; /* Initial position */
+  background-attachment: fixed;
+  background-position: center top; 
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -26,11 +26,11 @@ body {
 
 
 .navbar-custom {
-  background-color: #1F2833 !important; /* Dark background for default theme */
+  background-color: #1F2833 !important;
 }
 
 .navbar-custom-light {
-  background-color: #f8f9fa !important; /* Light background for light theme */
+  background-color: #f8f9fa !important; 
 }
 
 .navbar {
@@ -53,7 +53,6 @@ body {
 }
 
 .navbar-collapse {
-  /*background-color: #1F2833;*/
   height: 50px;
   margin-top: 10px;
   border-radius: 5px;
@@ -267,9 +266,7 @@ h1 {
     border-color: #007bff;
   }
 
-  body.light-theme .container {
-    background-color: #f8f9fa;
-  }
+ 
 
   body.light-theme footer {
     background-color: #e9ecef;
