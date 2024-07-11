@@ -7,15 +7,13 @@ function toggleTheme() {
     // Toggle navbar class
     const navbar = document.querySelector('.navbar');
     if (isLightTheme) {
-        navbar.classList.add('navbar-custom-light');
         toggleButton.textContent = 'Dark Theme';
         toggleButton.style.backgroundColor = '#1F2833';
-        toggleButton.style.color = '#ffffff';
+        toggleButton.style.color = '#E4EDFC';
     } else {
-        navbar.classList.remove('navbar-custom-light');
         toggleButton.textContent = 'Light Theme';
-        toggleButton.style.backgroundColor = '#ffffff';
-        toggleButton.style.color = '#000000';
+        toggleButton.style.backgroundColor = '#E4EDFC';
+        toggleButton.style.color = '#1F2833';
     }
 
     // Store the user's preference in localStorage
@@ -28,13 +26,12 @@ window.onload = function () {
     const toggleButton = document.getElementById('theme-toggle');
     if (theme === 'light') {
         document.body.classList.add('light-theme');
-        document.querySelector('.navbar').classList.add('navbar-custom-light');
         toggleButton.textContent = 'Dark Theme';
         toggleButton.style.backgroundColor = '#1F2833'; // Dark background color
-        toggleButton.style.color = '#ffffff'; // Light text color
+        toggleButton.style.color = '#E4EDFC'; // Light text color
     } else {
         toggleButton.textContent = 'Light Theme';
-        toggleButton.style.backgroundColor = '#ffffff'; // Light background color
-        toggleButton.style.color = '#000000'; // Dark text color
+        toggleButton.style.backgroundColor = '#E4EDFC'; // Light background color
+        toggleButton.style.color = '#1F2833'; // Dark text color
     }
 };

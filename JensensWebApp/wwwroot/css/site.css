@@ -316,7 +316,6 @@ body.light-theme {
       transform: scale(1.15);
     }
 
-
   body.light-theme .btn-primary {
     color: #120A15;
     background-color: #E4EDFC;
@@ -345,7 +344,6 @@ body.light-theme {
   body.light-theme .card-link {
     color: #7D91E1;
   }
-
 
   body.light-theme .form-control {
     color: #120A15;
