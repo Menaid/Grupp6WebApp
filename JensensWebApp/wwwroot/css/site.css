@@ -375,3 +375,33 @@ body.light-theme {
     }
 
 
+.heart-button {
+  position: relative;
+  width: 30px;
+  height: 27px;
+
+}
+
+  .heart-button::before,
+  .heart-button::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .heart-button::before {
+    top: -15px;
+    left: 0;
+  }
+
+  .heart-button::after {
+    left: 15px;
+    top: 0;
+  }
+
+  .heart-button:hover {
+    background-color: pink;
+  }
