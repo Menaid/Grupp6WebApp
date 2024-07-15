@@ -374,34 +374,20 @@ body.light-theme {
       text-decoration: underline;
     }
 
-
-.heart-button {
-  position: relative;
-  width: 30px;
-  height: 27px;
-
+.heart-button img {
+  display: block;
+  width: 25px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  border: none; /* Remove any border if present */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: transform 0.2s; /* Smooth transition effect */
 }
 
-  .heart-button::before,
-  .heart-button::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 27px;
-    border-radius: 50%;
-    background-color: red;
-  }
+.heart-button {
+  display: inline-block;
+  text-decoration: none; /* Remove underline from link */
+}
 
-  .heart-button::before {
-    top: -15px;
-    left: 0;
-  }
-
-  .heart-button::after {
-    left: 15px;
-    top: 0;
-  }
-
-  .heart-button:hover {
-    background-color: pink;
+  .heart-button:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
   }
