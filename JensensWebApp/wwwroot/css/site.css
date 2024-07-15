@@ -376,18 +376,18 @@ body.light-theme {
 
 .heart-button img {
   display: block;
-  width: 25px; /* Set the desired width */
-  height: auto; /* Maintain aspect ratio */
-  border: none; /* Remove any border if present */
-  cursor: pointer; /* Change cursor to pointer */
-  transition: transform 0.2s; /* Smooth transition effect */
+  width: 25px; 
+  height: auto;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .heart-button {
   display: inline-block;
-  text-decoration: none; /* Remove underline from link */
+  text-decoration: none; 
 }
 
   .heart-button:hover img {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transform: scale(1.1); 
   }

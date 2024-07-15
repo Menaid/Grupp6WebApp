@@ -74,6 +74,15 @@ namespace JensensWebApp.Controllers
             return View();
         }
 
+        public IActionResult Favorites()
+        {
+            // You can add specific logic for the Favorites page here
+            // For example, fetching user-specific favorites from a database, etc.
+
+            // For now, let's return a simple view
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
