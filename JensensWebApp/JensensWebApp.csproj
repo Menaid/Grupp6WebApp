@@ -10,4 +10,8 @@
     <Content Remove="wwwroot\js\themeToggle.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\privacy.css" />
+  </ItemGroup>
+
 </Project>
