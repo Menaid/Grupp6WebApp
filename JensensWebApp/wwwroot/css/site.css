@@ -105,11 +105,12 @@ footer a {
   }
 
 .footer[b-he1jpyb09p] {
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  height: 57px;
-  border-top: 2px solid #66FCF1 !important;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    white-space: nowrap;
+    height: 57px;
+    border-top: 2px solid #66FCF1 !important;
 }
 
 .text-muted {
