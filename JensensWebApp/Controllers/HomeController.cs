@@ -76,11 +76,9 @@ namespace JensensWebApp.Controllers
 
         public IActionResult Favorites()
         {
-            // You can add specific logic for the Favorites page here
-            // For example, fetching user-specific favorites from a database, etc.
+            var favoriteArticles = _articles.Where(a => a.Topic.Contains("Ekonomi")).ToList();
 
-            // For now, let's return a simple view
-            return View();
+            return View(favoriteArticles);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
