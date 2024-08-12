@@ -130,31 +130,27 @@ footer a {
   border-radius: 120px;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  padding: 10px;
+  padding: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .col-md-6 {
   width: 60%
 }
 
-.card:hover {
-  transform: scale(1.0);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 .card-title {
   color: white;
-  font-size: 3rem;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
   .card-title:hover {
-    transform: scale(1.15);
-    color: rgb(255, 255, 255);
+    transform: scale(1.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
 .card-text {
@@ -266,6 +262,17 @@ h1 {
     border-radius: 5px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
+
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form .input-group {
+    max-width: 600px;
+    width: 100%;
+}
+
 
 /* Light Theme Styles */
 body.light-theme {
