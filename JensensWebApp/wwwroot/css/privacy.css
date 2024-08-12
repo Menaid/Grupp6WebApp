@@ -5,12 +5,6 @@
   background-color: #1F2833;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #E4EDFC;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
 h2 {
     font-size: 1.8em;
     color: #66FCF1;
@@ -61,16 +55,6 @@ p {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #E4EDFC;
-  margin-bottom: 20px;
 }
 
 .privacy-form {

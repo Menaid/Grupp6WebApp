@@ -1,7 +1,12 @@
 html {
+
   font-size: 14px;
   position: relative;
   min-height: 100%;
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+
 }
 
 @media (min-width: 768px) {
@@ -88,6 +93,17 @@ body:not(.light-theme) .nav-link {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #66fcf1;
+    text-shadow: 6px 4px 0px rgba(0, 0, 0, 1);
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Monotype Corsiva','Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: -25px;
 }
 
 footer {
@@ -181,15 +197,6 @@ footer a {
   .card-link:hover {
     text-decoration: underline;
   }
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-top: -10px;
-  margin-bottom: -25px;
-}
 
 .btn.btn-primary {
   color: #ffffff;
@@ -314,7 +321,7 @@ body.light-theme {
     }
 
   body.light-theme h1 {
-    color: #E4EDFC;
+    color: #3ff30b;
   }
 
   body.light-theme header {
