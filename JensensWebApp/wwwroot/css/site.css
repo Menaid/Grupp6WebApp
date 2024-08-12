@@ -1,5 +1,7 @@
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -8,10 +10,6 @@ html {
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
 
 body {
   background-image: url('../images/Space.png'); 
@@ -234,7 +232,7 @@ h1 {
 
 
 .light-theme #theme-toggle {
-  background-color: ##E4EDFC;
+  background-color: #E4EDFC;
   color: #120A15;
 }
 
