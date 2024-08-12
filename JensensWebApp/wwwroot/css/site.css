@@ -1,16 +1,13 @@
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
 }
 
 body {
@@ -239,7 +236,7 @@ h1 {
 
 
 .light-theme #theme-toggle {
-  background-color: ##E4EDFC;
+  background-color: #E4EDFC;
   color: #120A15;
 }
 
