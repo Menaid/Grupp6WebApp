@@ -1,12 +1,13 @@
-﻿function toggleFavorite(element) {
+﻿function toggleFavorite(event, element) {
+    event.preventDefault();
+
     var imgElement = element.querySelector('img.heart-img');
 
-    // Check the current image source to determine the state
     if (imgElement.getAttribute('src').includes('greyHeart')) {
-        // Toggle to heart.png
-        imgElement.setAttribute('src', '~/images/heart.png');
+        imgElement.setAttribute('src', '@Url.Content("~/images/heart.png")');
+        imgElement.setAttribute('alt', 'Red Heart'); 
     } else {
-        // Toggle back to greyHeart.png
-        imgElement.setAttribute('src', '~/images/greyHeart.png');
+        imgElement.setAttribute('src', '@Url.Content("~/images/greyHeart.png")');
+        imgElement.setAttribute('alt', 'Grey Heart'); // Update the alt text
     }
 }

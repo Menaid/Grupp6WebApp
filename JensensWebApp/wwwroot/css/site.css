@@ -384,8 +384,11 @@ body.light-theme {
 }
 
 .heart-button {
-  display: inline-block;
-  text-decoration: none; 
+  display: inline-block; 
+  text-decoration: none;
+  padding: 0; 
+  background: none;
+  border: none;
 }
 
   .heart-button:hover img {
