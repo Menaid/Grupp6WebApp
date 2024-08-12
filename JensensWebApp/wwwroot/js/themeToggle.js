@@ -1,5 +1,6 @@
 // Function to toggle between light and dark themes
 function toggleTheme() {
+
     const body = document.body;
     const toggleButton = document.getElementById('theme-toggle');
     const isLightTheme = body.classList.toggle('light-theme');
