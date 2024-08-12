@@ -82,13 +82,13 @@ body {
 }
 
 footer {
-  background-color: #0B0C10;
-  color: #ffffff;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    background-color: #1f2833;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-container {
