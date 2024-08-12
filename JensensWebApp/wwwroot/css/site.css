@@ -1,16 +1,13 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
 }
 
 body {
@@ -99,7 +96,7 @@ h1 {
     text-shadow: 6px 4px 0px rgba(0, 0, 0, 1);
     letter-spacing: 5px;
     font-weight: bold;
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva','Times New Roman', Times, serif;
     text-align: center;
     margin-bottom: -25px;
 }
@@ -241,7 +238,7 @@ footer a {
 
 
 .light-theme #theme-toggle {
-  background-color: ##E4EDFC;
+  background-color: #E4EDFC;
   color: #120A15;
 }
 
