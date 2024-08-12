@@ -110,3 +110,41 @@ input, textarea {
   .submit-btn:hover {
     background-color: #45A29E;
   }
+
+
+
+/* Light Theme Styles */
+body.light-theme {
+  color: #120A15;
+  background-color: #E4EDFC;
+}
+
+
+  body.light-theme .privacy-content {
+    background-color: rgba(228, 237, 252, 0.8); 
+  }
+
+
+  body.light-theme h2 {
+    color: #1861ac; 
+  }
+
+  body.light-theme .form-group label {
+    color: #120A15; 
+  }
+
+  body.light-theme input,
+  body.light-theme textarea {
+    background-color: #E4EDFC; 
+    border-color: #1861ac; 
+    color: #120A15; 
+  }
+
+  body.light-theme .submit-btn {
+    background-color: #1861ac; 
+    color: #E4EDFC; 
+  }
+
+    body.light-theme .submit-btn:hover {
+      background-color: #4a90e2;
+    }
