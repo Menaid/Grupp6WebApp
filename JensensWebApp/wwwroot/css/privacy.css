@@ -12,19 +12,20 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
-  color: #66FCF1;
+    font-size: 1.8em;
+    color: #66FCF1;
+    text-align: center;
 }
 
 p {
   font-size: 1em;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .title-container {
   padding: 20px;
   border-radius: 10px;
-  margin: 20px;
   color: #E4EDFC
 }
 
