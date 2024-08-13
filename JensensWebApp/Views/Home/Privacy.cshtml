@@ -1,6 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿<div class="privacy-container">
+    <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    <div class="privacy-content">
+        <p><strong>Din integritet är viktig för oss.</strong></p>
+        <p>Vi värnar om din trygghet och lovar att inte lämna ut dina personuppgifter till någon utomstående part. Dina uppgifter används endast för att förbättra din användarupplevelse och för att kunna kontakta dig vid behov.</p>
+
+        <div class="title-container">
+            <h1>@ViewData["Title"]</h1>
+        </div>
+
+        <h2>Kontaktformulär</h2>
+        <form method="post" action="/Privacy/Contact" class="privacy-form">
+            <div class="form-group">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Skicka</button>
+        </form>
+    </div>
+</div>
